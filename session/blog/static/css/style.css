@@ -1,0 +1,14 @@
+body {
+  border: #ff7676 px solid;
+  background-color: #ffd6b2;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: Times;
+  color: rgb(55, 56, 125);
+  text-align: center;
+  background-color: #ff7676;
+  border: 5px solid rgb(55, 56, 125);
+  border-radius: 15px;
+}

@@ -1,11 +1,23 @@
-<h1>LIKELION 11 Blog Project</h1>
-<a href="{%url 'new'%}">새 글 작성하기</a>
-<div>
-    {% for blog in blogs %}
-    <a href="{%url 'detail' blog.id%}">
-    <h2>{{blog.title}}</h2>
-    <p>{{blog.summary}}</p>
-    <p>{{blog.created_at}}</p>
-    </a>
-    {% endfor %}
-</div>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/static/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>LIKELION 11 Blog Project</h1>
+    <a href="{%url 'new'%}">새 글 작성하기</a>
+    <div>
+      {% for blog in blogs %}
+      <a href="{%url 'detail' blog.id%}">
+        <h2>{{blog.title}}</h2>
+        <p>{{blog.summary}}</p>
+        <p>{{blog.created_at}}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </body>
+</html>
